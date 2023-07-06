@@ -1,39 +1,31 @@
 pragma solidity ^0.8.0;
 
-contract fakeProdDetector {
-    mapping(bytes32 => Product) public productList;
+contract FakeMedicineDetector {
+    mapping(bytes32 => Medicine) public medicineList;
 
-    struct Product {
-        bytes32 product_id;
-        string product_name;
-        uint product_price;
+    struct Medicine {
+        bytes32 medicineID;
+        string medicineName;
+        uint256 medicinePrice;
         bool isFake;
-
     }
 
-
-
-    function uploadProduct(bytes32 id, string memory name, uint price) public {
-
-        require(productList[id].product_id != 0, "Product found and already Exists");
-            productList[id] = Product({
-            product_id: id,
-            product_name: name,
-            product_price: price,
+    function uploadMedicine(bytes32 id, string memory name, uint256 price) public {
+        require(medicineList[id].medicineID == bytes32(0), "Medicine already exists");
+        medicineList[id] = Medicine({
+            medicineID: id,
+            medicineName: name,
+            medicinePrice: price,
             isFake: false
         });
-
-
     }
 
-    function reportFakeProduct(bytes32 productId) public {
-        require(productList[productId].product_id == 0, "Product not found");
-        productList[productId].isFake = true;
+    function reportFakeMedicine(bytes32 medicineId) public {
+        require(medicineList[medicineId].medicineID != bytes32(0), "Medicine not found");
+        medicineList[medicineId].isFake = true;
     }
 
-    function isFakeProduct(bytes32 productId) public view returns (bool) {
-        return productList[productId].isFake;
+    function isFakeMedicine(bytes32 medicineId) public view returns (bool) {
+        return medicineList[medicineId].isFake;
     }
-
 }
-
