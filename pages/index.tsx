@@ -2,6 +2,7 @@ import { ConnectWallet } from '@thirdweb-dev/react';
 import styles from '../styles/Home.module.scss';
 import Image from 'next/image';
 import { NextPage } from 'next';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -9,7 +10,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            Fake <span className={styles.gradientText0}>Medicine</span>{' '}
+            Fake <span className={styles.gradientText0}>Medicine</span>
             Detection
           </h1>
 
@@ -28,39 +29,29 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.grid}>
-          <a
+          <Link
             href='https://portal.thirdweb.com/'
             className={styles.card}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Image
-              src='/images/portal-preview.png'
-              alt='Placeholder preview of starter'
-              width={300}
-              height={200}
-            />
             <div className={styles.cardText}>
-              <h2 className={styles.gradientText1}>Portal ➜</h2>
+              <h2 className={styles.gradientText2}>Portal ➜</h2>
               <p>
-                Guides, references, and resources that will help you build with
-                thirdweb.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, veniam natus iusto expedita nobis sed rerum a ullam
+                nulla possimus molestiae, nemo blanditiis non iste labore
+                voluptates modi eius amet.
               </p>
             </div>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href='https://thirdweb.com/dashboard'
             className={styles.card}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Image
-              src='/images/dashboard-preview.png'
-              alt='Placeholder preview of starter'
-              width={300}
-              height={200}
-            />
             <div className={styles.cardText}>
               <h2 className={styles.gradientText2}>Dashboard ➜</h2>
               <p>
@@ -68,28 +59,22 @@ const Home: NextPage = () => {
                 dashboard.
               </p>
             </div>
-          </a>
+          </Link>
 
-          <a
-            href='https://thirdweb.com/templates'
+          <Link
+            href='/about'
             className={styles.card}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Image
-              src='/images/templates-preview.png'
-              alt='Placeholder preview of templates'
-              width={300}
-              height={200}
-            />
             <div className={styles.cardText}>
-              <h2 className={styles.gradientText3}>Templates ➜</h2>
+              <h2 className={styles.gradientText2}>About Us ➜</h2>
               <p>
                 Discover and clone template projects showcasing thirdweb
                 features.
               </p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </main>
