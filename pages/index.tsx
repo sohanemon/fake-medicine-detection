@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.grid}>
-          <Link
+          {/* <Link
             href='https://portal.thirdweb.com/'
             className={styles.card}
             target='_blank'
@@ -44,19 +44,19 @@ const Home: NextPage = () => {
                 voluptates modi eius amet.
               </p>
             </div>
-          </Link>
+          </Link> */}
 
           <Link
-            href='https://thirdweb.com/dashboard'
+            href='/medicines'
             className={styles.card}
             target='_blank'
             rel='noopener noreferrer'
           >
             <div className={styles.cardText}>
-              <h2 className={styles.gradientText2}>Dashboard ➜</h2>
+              <h2 className={styles.gradientText2}>Medicine ➜</h2>
               <p>
-                Deploy, configure, and manage your smart contracts from the
-                dashboard.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                illo, voluptates officiis
               </p>
             </div>
           </Link>
@@ -70,8 +70,8 @@ const Home: NextPage = () => {
             <div className={styles.cardText}>
               <h2 className={styles.gradientText2}>About Us ➜</h2>
               <p>
-                Discover and clone template projects showcasing thirdweb
-                features.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                vitae voluptatem quas
               </p>
             </div>
           </Link>
