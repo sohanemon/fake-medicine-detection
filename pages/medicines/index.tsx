@@ -19,17 +19,16 @@ const Medicines = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    // setData({ ...product, id: product.productName });
+    setData({ ...product, id: product.productName });
     // setProduct({
     //   manufacturer: '',
     //   productName: '',
     //   price: '',
     //   quantity: '',
     // });
-  };
-  function handleClick() {
     setShowQR(true);
-  }
+  };
+  function handleClick() {}
 
   return (
     <div
@@ -130,7 +129,7 @@ const Medicines = () => {
         {/* <Reader /> */}
       </form>
       <button
-        onClick={() => setData({ data: 'slfjsl' })}
+        // onClick={() => setData({ data: 'slfjsl', id: 'sfhfu' })}
         className='bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
         type='submit'
       >
