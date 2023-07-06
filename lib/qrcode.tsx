@@ -1,5 +1,4 @@
 import QRCode from 'react-qr-code';
-import { parse, stringify } from 'crypto-js/enc-hex';
 
 export default function QR({ id }: { id: string }) {
   return (
@@ -12,7 +11,7 @@ export default function QR({ id }: { id: string }) {
       }}
     >
       <QRCode
-        value={'http://localhost:3000/medicine?q=' + stringify(id as any)}
+        value={'http://localhost:3000/medicine?q=' + window.atob(id as any)}
       />
     </div>
   );
