@@ -1,4 +1,8 @@
+import { useRouter } from 'next/router';
+
 export default function Medicine() {
+  const router = useRouter();
+  console.log(router.query.q);
   return (
     <section>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit!
