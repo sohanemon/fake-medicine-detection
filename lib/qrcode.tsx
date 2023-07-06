@@ -10,7 +10,7 @@ export default function QR({ id }: { id: string }) {
         placeContent: 'center',
       }}
     >
-      <QRCode value={id} />
+      <QRCode value={'http://localhost:3000/' + id} />
     </div>
   );
 }
