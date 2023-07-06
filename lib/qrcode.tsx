@@ -2,8 +2,6 @@ import QRCode from 'react-qr-code';
 import { stringToHex } from './utils';
 
 export default function QR({ id }: { id: string }) {
-  console.log('🛑 ~ QR ~ id:', id);
-
   return (
     <div
       style={{
