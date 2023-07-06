@@ -1,6 +1,6 @@
 import QRCode from 'react-qr-code';
 
-export default function QR() {
+export default function QR({ id }: { id: string }) {
   return (
     <div
       style={{
@@ -10,7 +10,7 @@ export default function QR() {
         placeContent: 'center',
       }}
     >
-      <QRCode value={JSON.stringify({ name: 'hey lol lol olo', roll: 5 })} />
+      <QRCode value={id} />
     </div>
   );
 }
