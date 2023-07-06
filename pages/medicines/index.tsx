@@ -123,7 +123,7 @@ const Medicines = () => {
           </>
         )}
         <br />
-        {showQR && <QR id={product.productName} />}
+        {showQR && <QR id={product?.productName} />}
         {/* <Reader /> */}
       </form>
     </div>
