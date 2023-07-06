@@ -43,13 +43,13 @@ const Medicines = () => {
           <>
             <div className='mb-4'>
               <label
-                className='block text-yellow-500 text-sm font-bold mb-2'
+                className='block text-neutral-400 text-sm font-bold mb-2'
                 htmlFor='manufacturer'
               >
                 Manufacturer
               </label>
               <input
-                className='shadow appearance-none border rounded w-full py-2 px-3 text-yellow-500 leading-tight focus:outline-none focus:shadow-outline'
+                className='shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline'
                 id='manufacturer'
                 type='text'
                 placeholder='Manufacturer'
@@ -61,13 +61,13 @@ const Medicines = () => {
             </div>
             <div className='mb-4'>
               <label
-                className='block text-yellow-500 text-sm font-bold mb-2'
+                className='block text-neutral-400 text-sm font-bold mb-2'
                 htmlFor='productName'
               >
                 Product Name
               </label>
               <input
-                className='shadow appearance-none border rounded w-full py-2 px-3 text-yellow-500 leading-tight focus:outline-none focus:shadow-outline'
+                className='shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline'
                 id='productName'
                 type='text'
                 placeholder='Product Name'
@@ -79,13 +79,13 @@ const Medicines = () => {
             </div>
             <div className='mb-4'>
               <label
-                className='block text-yellow-500 text-sm font-bold mb-2'
+                className='block text-neutral-400 text-sm font-bold mb-2'
                 htmlFor='price'
               >
                 Price
               </label>
               <input
-                className='shadow appearance-none border rounded w-full py-2 px-3 text-yellow-500 leading-tight focus:outline-none focus:shadow-outline'
+                className='shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline'
                 id='price'
                 type='number'
                 placeholder='Price'
@@ -97,13 +97,13 @@ const Medicines = () => {
             </div>
             <div className='mb-4'>
               <label
-                className='block text-yellow-500 text-sm font-bold mb-2'
+                className='block text-neutral-400 text-sm font-bold mb-2'
                 htmlFor='quantity'
               >
                 Quantity
               </label>
               <input
-                className='shadow appearance-none border rounded w-full py-2 px-3 text-yellow-500 leading-tight focus:outline-none focus:shadow-outline'
+                className='shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline'
                 id='quantity'
                 type='number'
                 placeholder='Quantity'
@@ -114,7 +114,7 @@ const Medicines = () => {
             </div>
             <div className='flex items-center justify-between'>
               <button
-                className='bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+                className='bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
                 type='submit'
               >
                 Add Product
