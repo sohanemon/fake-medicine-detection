@@ -1,4 +1,5 @@
 {
   "cSpell.words": ["Thirdweb"],
-  "gitdoc.enabled": true
+  "gitdoc.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

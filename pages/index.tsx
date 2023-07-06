@@ -29,27 +29,19 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.grid}>
-          {/* <Link
-            href='https://portal.thirdweb.com/'
-            className={styles.card}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <Link href='/' className={styles.card} rel='noopener noreferrer'>
             <div className={styles.cardText}>
-              <h2 className={styles.gradientText2}>Portal ➜</h2>
+              <h2 className={styles.gradientText2}>Home ➜</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Debitis, veniam natus iusto expedita nobis sed rerum a ullam
-                nulla possimus molestiae, nemo blanditiis non iste labore
-                voluptates modi eius amet.
+                Debitis,
               </p>
             </div>
-          </Link> */}
+          </Link>
 
           <Link
             href='/medicines'
             className={styles.card}
-            target='_blank'
             rel='noopener noreferrer'
           >
             <div className={styles.cardText}>
@@ -61,12 +53,7 @@ const Home: NextPage = () => {
             </div>
           </Link>
 
-          <Link
-            href='/about'
-            className={styles.card}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <Link href='/about' className={styles.card} rel='noopener noreferrer'>
             <div className={styles.cardText}>
               <h2 className={styles.gradientText2}>About Us ➜</h2>
               <p>
