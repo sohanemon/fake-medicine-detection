@@ -1,19 +1,26 @@
 // @ts-nocheck
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { getData } from '../../db/client';
+import { hexToString } from '../../lib/utils';
 
 export default function Medicine() {
+  const [state, setState] = useState(null);
   const {
     query: { q },
   } = useRouter();
-  console.log(getData(q));
+  useEffect(() => {
+    console.log(getData(hexToString(q)));
+  }, [q]);
+
+  console.log(state);
 
   return (
-    <section>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit!
-      Veniam voluptas omnis exercitationem provident corrupti facere maiores?
-      Unde iure eligendi in architecto tempore molestiae impedit, adipisci porro
-      voluptate eveniet?
+    <section className='grid place-content-center'>
+      <div>
+        <p className='text-3xl'>{state?.productName}</p>
+        <p>{state?.manufacturer}</p>
+      </div>
     </section>
   );
 }
