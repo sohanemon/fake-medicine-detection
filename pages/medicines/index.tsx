@@ -20,15 +20,14 @@ const Medicines = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setData({ ...product, id: product.productName });
-    // setProduct({
-    //   manufacturer: '',
-    //   productName: '',
-    //   price: '',
-    //   quantity: '',
-    // });
+    setProduct({
+      manufacturer: '',
+      productName: '',
+      price: '',
+      quantity: '',
+    });
     setShowQR(true);
   };
-  function handleClick() {}
 
   return (
     <div
@@ -115,7 +114,6 @@ const Medicines = () => {
             </div>
             <div className='flex items-center justify-between'>
               <button
-                onClick={handleClick}
                 className='bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
                 type='submit'
               >
@@ -128,13 +126,6 @@ const Medicines = () => {
         {showQR && <QR id={product.productName} />}
         {/* <Reader /> */}
       </form>
-      <button
-        // onClick={() => setData({ data: 'slfjsl', id: 'sfhfu' })}
-        className='bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
-        type='submit'
-      >
-        Add Product
-      </button>
     </div>
   );
 };
