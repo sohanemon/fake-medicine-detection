@@ -1,4 +1,5 @@
 import QRCode from 'react-qr-code';
+import * as Crypto from 'crypto-js';
 
 export default function QR({ id }: { id: string }) {
   return (
@@ -10,7 +11,12 @@ export default function QR({ id }: { id: string }) {
         placeContent: 'center',
       }}
     >
-      <QRCode value={'http://localhost:3000/medicine?q=' + id} />
+      <QRCode
+        value={
+          'http://localhost:3000/medicine?q=' +
+          Crypto.enc.Hex.stringify(id as any)
+        }
+      />
     </div>
   );
 }
