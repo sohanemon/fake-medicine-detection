@@ -102,9 +102,7 @@ export function logOut() {
 // firebase db actions
 
 export async function setData(data: any) {
-  await setDoc(doc(db, 'collectionName', 'id'), {
-    name: 'ololo',
-  });
+  await setDoc(doc(db, collectionName, data.id), data);
 }
 
 export async function getData(id: string) {
