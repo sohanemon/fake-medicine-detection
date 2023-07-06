@@ -1,8 +1,13 @@
+// @ts-nocheck
 import { useRouter } from 'next/router';
+import { getData } from '../../db/client';
 
 export default function Medicine() {
-  const router = useRouter();
-  console.log(router.query.q);
+  const {
+    query: { q },
+  } = useRouter();
+  console.log(getData(q));
+
   return (
     <section>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit!
