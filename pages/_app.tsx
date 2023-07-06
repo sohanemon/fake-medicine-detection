@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 import { ThirdwebProvider } from '@thirdweb-dev/react';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 const activeChain = 'ethereum';
 

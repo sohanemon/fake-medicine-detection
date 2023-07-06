@@ -1,7 +1,7 @@
-import { ConnectWallet } from "@thirdweb-dev/react";
-import styles from "../styles/Home.module.css";
-import Image from "next/image";
-import { NextPage } from "next";
+import { ConnectWallet } from '@thirdweb-dev/react';
+import styles from '../styles/Home.module.scss';
+import Image from 'next/image';
+import { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
@@ -9,29 +9,19 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            Welcome to{" "}
-            <span className={styles.gradientText0}>
-              <a
-                href="https://thirdweb.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                thirdweb.
-              </a>
-            </span>
+            Fake <span className={styles.gradientText0}>Medicine</span>{' '}
+            Detection
           </h1>
 
           <p className={styles.description}>
-            Get started by configuring your desired network in{" "}
-            <code className={styles.code}>src/index.js</code>, then modify the{" "}
-            <code className={styles.code}>src/App.js</code> file!
+            Get started by connecting your wallet.
           </p>
 
           <div className={styles.connect}>
             <ConnectWallet
               dropdownPosition={{
-                side: "bottom",
-                align: "center",
+                side: 'bottom',
+                align: 'center',
               }}
             />
           </div>
@@ -39,14 +29,14 @@ const Home: NextPage = () => {
 
         <div className={styles.grid}>
           <a
-            href="https://portal.thirdweb.com/"
+            href='https://portal.thirdweb.com/'
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <Image
-              src="/images/portal-preview.png"
-              alt="Placeholder preview of starter"
+              src='/images/portal-preview.png'
+              alt='Placeholder preview of starter'
               width={300}
               height={200}
             />
@@ -60,14 +50,14 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://thirdweb.com/dashboard"
+            href='https://thirdweb.com/dashboard'
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <Image
-              src="/images/dashboard-preview.png"
-              alt="Placeholder preview of starter"
+              src='/images/dashboard-preview.png'
+              alt='Placeholder preview of starter'
               width={300}
               height={200}
             />
@@ -81,14 +71,14 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://thirdweb.com/templates"
+            href='https://thirdweb.com/templates'
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <Image
-              src="/images/templates-preview.png"
-              alt="Placeholder preview of templates"
+              src='/images/templates-preview.png'
+              alt='Placeholder preview of templates'
               width={300}
               height={200}
             />
