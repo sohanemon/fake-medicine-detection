@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { getData } from '../../db/client';
 import { hexToString } from '../../lib/utils';
+import medicine from './medicine.module.scss';
 
 export default function Medicine() {
   const [state, setState] = useState(null);
@@ -10,16 +11,17 @@ export default function Medicine() {
     query: { q },
   } = useRouter();
   useEffect(() => {
-    console.log(getData(hexToString(q)));
+    if (q) getData(hexToString(q)).then((res) => setState(res));
   }, [q]);
 
   console.log(state);
 
   return (
-    <section className='grid place-content-center'>
+    <section className={medicine.root}>
       <div>
-        <p className='text-3xl'>{state?.productName}</p>
-        <p>{state?.manufacturer}</p>
+        <p>{state?.productName}</p>
+        <p>By {state?.manufacturer} Pharmaceuticals Limited</p>
+        <p>This product is authentic</p>
       </div>
     </section>
   );

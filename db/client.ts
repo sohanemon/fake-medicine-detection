@@ -109,7 +109,7 @@ export async function getData(id: string) {
   const docSnap = await getDoc(doc(db, collectionName, id));
 
   if (docSnap.exists()) {
-    console.log('Document data:', docSnap.data());
+    return docSnap.data();
   } else {
     console.log('No such document!');
   }
