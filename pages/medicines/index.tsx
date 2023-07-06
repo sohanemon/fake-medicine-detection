@@ -20,13 +20,13 @@ const Medicines = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setData({ ...product, id: product.productName });
-    setProduct({
-      manufacturer: '',
-      productName: '',
-      price: '',
-      quantity: '',
-    });
     setShowQR(true);
+    // setProduct({
+    //   manufacturer: '',
+    //   productName: '',
+    //   price: '',
+    //   quantity: '',
+    // });
   };
 
   return (
