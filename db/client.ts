@@ -33,7 +33,7 @@ const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
 const auth = getAuth();
 const db = getFirestore(app);
-const collectionName = 'cities';
+const collectionName = 'medicines';
 
 // Utils
 const goHome = () => (window.location.pathname = '/');
@@ -111,7 +111,6 @@ export async function getData(id: string) {
   if (docSnap.exists()) {
     console.log('Document data:', docSnap.data());
   } else {
-    // docSnap.data() will be undefined in this case
     console.log('No such document!');
   }
 }
