@@ -10,9 +10,7 @@ export default function QR({ id }: { id: string }) {
         placeContent: 'center',
       }}
     >
-      <QRCode
-        value={'http://localhost:3000/medicine?q=' + window.atob(id as any)}
-      />
+      <QRCode value={'http://localhost:3000/medicine?q=' + (id as any)} />
     </div>
   );
 }
