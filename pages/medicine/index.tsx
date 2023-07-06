@@ -19,9 +19,15 @@ export default function Medicine() {
   return (
     <section className={medicine.root}>
       <div>
-        <p>{state?.productName}</p>
-        <p>By {state?.manufacturer} Pharmaceuticals Limited</p>
-        <p>This product is authentic</p>
+        {state ? (
+          <>
+            <p>{state?.productName}</p>
+            <p>By {state?.manufacturer} Pharmaceuticals Limited</p>
+            <p>This product is authentic</p>
+          </>
+        ) : (
+          <p>Loading</p>
+        )}
       </div>
     </section>
   );
