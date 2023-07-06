@@ -9,8 +9,9 @@ const Home: NextPage = () => {
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.header}>
+          <br />
           <h1 className={styles.title}>
-            Fake <span className={styles.gradientText0}>Medicine</span>
+            Fake <span className={styles.gradientText0}>Medicine </span>
             Detection
           </h1>
 
