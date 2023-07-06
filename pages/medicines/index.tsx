@@ -107,7 +107,6 @@ const Medicines = () => {
             name='quantity'
             value={product.quantity}
             onChange={handleChange}
-            required
           />
         </div>
         <div className='flex items-center justify-between'>
